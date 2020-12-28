@@ -22,6 +22,9 @@ ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=cyan'
 ZSH_HIGHLIGHT_STYLES[redirection]='fg=magenta,bold'
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=magenta,bold'
 
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line
+
 if [[ -f ~/.dircolors ]] ; then
     eval $(dircolors -b ~/.dircolors)     
 elif [[ -f /etc/DIR_COLORS ]] ; then
