@@ -18,6 +18,17 @@ git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle
 ```
 
 ## For local installs of zsh
+
+### Build and install ncurses
+
+```bash
+wget ftp://ftp.gnu.org/gnu/ncurses/ncurses-6.1.tar.gz
+tar xf ncurses-6.1.tar.gz
+cd ncurses-6.1
+./configure --prefix=$HOME/local CXXFLAGS="-fPIC" CFLAGS="-fPIC"
+make -j && make install
+```
+
 Download: https://sourceforge.net/projects/zsh/files/latest/download
 
 ### Compile and Install:
