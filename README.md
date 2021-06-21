@@ -33,7 +33,7 @@ Download: https://sourceforge.net/projects/zsh/files/latest/download
 
 ### Compile and Install:
 ```bash
-configure --prefix=$HOME
+configure --prefix=$HOME CPPFLAGS="-I$HOME/local/include" LDFLAGS="-L$HOME/local/lib"
 make
 make install
 ```
