@@ -24,6 +24,8 @@ ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=magenta,bold'
 
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 if [[ -f ~/.dircolors ]] ; then
     eval $(dircolors -b ~/.dircolors)     
